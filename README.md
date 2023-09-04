@@ -18,7 +18,7 @@ running container
 # comment out the 3 out of 4 servers from the nginx/nginx.conf
 sudo docker container run -p 8080:80 -d nginxapp
 
-sudo docker container run -p 1111:80 -d nodeapp
+sudo docker container run -p 1111:8080 -d nodeapp
 
 # shut downn all running instance of docker containers
 sudo docker stop $(sudo docker ps -a -q)
@@ -29,10 +29,10 @@ sudo docker stop $(sudo docker ps -a -q)
 # uncomment all servers from nginx/nginx.conf
 sudo docker container run -p 8080:80 -d nginxapp
 
-sudo docker container run -p 1111:80 -d nodeapp
-sudo docker container run -p 2222:80 -d nodeapp
-sudo docker container run -p 3333:80 -d nodeapp
-sudo docker container run -p 4444:80 -d nodeapp
+sudo docker container run -p 1111:8080 -d nodeapp
+sudo docker container run -p 2222:8080 -d nodeapp
+sudo docker container run -p 3333:8080 -d nodeapp
+sudo docker container run -p 4444:8080 -d nodeapp
 
 # shut downn all running instance of docker containers
 sudo docker stop $(sudo docker ps -a -q)
