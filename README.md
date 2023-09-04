@@ -1,4 +1,15 @@
-setup images
+installation
+
+```
+<!-- docker is required -->
+sudo apt install nginx
+pip3 install locust
+
+cd app
+npm i
+```
+
+building images
 
 ```bash
 cd app
