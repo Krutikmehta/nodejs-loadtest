@@ -58,3 +58,5 @@ setup is present in locustfile.py
 locust
 
 ```
+
+find results in results folder.
